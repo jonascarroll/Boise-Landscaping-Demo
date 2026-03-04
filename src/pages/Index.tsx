@@ -31,7 +31,7 @@ const Index = () => {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-charcoal-foreground max-w-3xl leading-tight mb-6">
-              Transform Your Mountain Property Into a Masterpiece
+              Boise's Premier Landscaping Experts
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
