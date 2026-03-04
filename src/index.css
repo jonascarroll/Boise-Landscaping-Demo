@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 200 10% 15%;
+
+    --card: 40 20% 99%;
+    --card-foreground: 200 10% 15%;
+
+    --popover: 40 20% 99%;
+    --popover-foreground: 200 10% 15%;
+
+    --primary: 145 35% 28%;
+    --primary-foreground: 40 20% 97%;
+
+    --secondary: 40 15% 92%;
+    --secondary-foreground: 200 10% 15%;
+
+    --muted: 40 10% 93%;
+    --muted-foreground: 200 5% 45%;
+
+    --accent: 30 50% 50%;
+    --accent-foreground: 40 20% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 10% 88%;
+    --input: 40 10% 88%;
+    --ring: 145 35% 28%;
+
+    --radius: 0.5rem;
+
+    --charcoal: 200 10% 20%;
+    --charcoal-foreground: 40 20% 97%;
+    --forest: 145 35% 28%;
+    --forest-light: 145 25% 40%;
+    --stone: 35 20% 85%;
+    --cream: 40 30% 95%;
+    --warm-gold: 38 60% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 200 10% 10%;
+    --foreground: 40 20% 95%;
+    --card: 200 10% 13%;
+    --card-foreground: 40 20% 95%;
+    --popover: 200 10% 13%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 145 35% 40%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 200 8% 18%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 200 8% 18%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 30 50% 50%;
+    --accent-foreground: 40 20% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 200 8% 22%;
+    --input: 200 8% 22%;
+    --ring: 145 35% 40%;
+    --charcoal: 200 10% 85%;
+    --charcoal-foreground: 200 10% 10%;
+    --forest: 145 35% 45%;
+    --forest-light: 145 25% 55%;
+    --stone: 35 10% 30%;
+    --cream: 40 10% 15%;
+    --warm-gold: 38 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
